@@ -47,7 +47,7 @@ if (i % 2 == 0 )
  else
      System.out.println("。");
 }
-2、接下来统计其中的字的个数，代码运行后，输入你想统计的字，返回该字的个数，代码如下，运行结果见附件。
+2、接下来统计其中的字的个数，代码运行后，输入你想统计的字，返回该字的个数，代码如下，运行结果见附件。大概思路为遍历整个字符串，每遇到输入的字便加1，采用叠加的方法处理。
 private static void countString(String str,String s) {
    int length=str.length();
    int count = 0;
@@ -84,6 +84,6 @@ catch(Exception e) {
   System.err.println("发生异常."+e.toString());
 }
 四、实验结果
-均见附件。
-
+见附件。
 五、实验感想
+通过此次实验，掌握了字符串String及其方法的使用，并学会基本的运用和编程。在此基础上，了解了程序异常处理，并学会在代码中如何运用。
