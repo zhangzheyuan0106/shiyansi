@@ -61,6 +61,28 @@ private static void countString(String str,String s) {
    }
    System.out.println(s+"出现的次数为"+count+"次");
  }
+3、关于异常处理，代码如下。
+try {
+ for (int i=0; i<count+1; i++) {
+    System.out.print(chs[(i*7)]);
+    System.out.print(chs[(i*7)+1]);
+    System.out.print(chs[(i*7)+2]);
+    System.out.print(chs[(i*7)+3]);
+    System.out.print(chs[(i*7)+4]);
+    System.out.print(chs[(i*7)+5]);
+    System.out.print(chs[(i*7)+6]);
+if (i % 2 == 0 )
+     System.out.print(",");
+ else
+     System.out.println("。");
+}
+}
+catch (ArrayIndexOutOfBoundsException i) {
+ System.out.print("……");
+}
+catch(Exception e) {
+  System.err.println("发生异常."+e.toString());
+}
 四、实验结果
 均见附件。
 
